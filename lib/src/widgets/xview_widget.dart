@@ -38,6 +38,7 @@ class _XViewWidgetState extends State<XViewWidget> {
   @override
   void initState() {
     super.initState();
+    initializeController();
   }
 
   void initializeController() {
