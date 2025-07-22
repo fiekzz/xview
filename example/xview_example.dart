@@ -112,20 +112,20 @@ class _XViewExampleState extends State<XViewExample> {
                 setState(() {
                   _currentUrl = url;
                 });
-                print('Page started loading: $url');
+                debugPrint('Page started loading: $url');
               },
               onPageFinished: (String url) {
                 setState(() {
                   _currentUrl = url;
                 });
-                print('Page finished loading: $url');
+                debugPrint('Page finished loading: $url');
 
                 // Auto-inject some custom functionality
                 // xviewController.addJavaScriptInterface('xviewAlert',
                 //     'function(message) { alert("XView: " + message); }');
               },
               onError: (String error) {
-                print('WebView error: $error');
+                debugPrint('WebView error: $error');
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text('Error: $error')),
                 );
@@ -198,7 +198,7 @@ class _XViewExampleState extends State<XViewExample> {
       context: context,
       builder: (context) => AlertDialog(
         title: Text('Navigation History'),
-        content: Container(
+        content: SizedBox(
           width: double.maxFinite,
           child: ListView.builder(
             shrinkWrap: true,
