@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:xview/src/widgets/xview_widget.dart';
-import 'package:xview/xview.dart';
+import 'package:xview_flutter/src/widgets/xview_widget.dart';
+import 'package:xview_flutter/xview.dart';
 
 void main() {
   runApp(XViewAppTest(
