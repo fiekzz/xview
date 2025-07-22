@@ -18,7 +18,14 @@ XViewFlutter is a custom webview for the flutter developers to have dynamic webv
 Not only that, those that has experience in web development can work together with existing flutter developers creating wonderful and feature rich applications. The vision for this project is to create an environment that will be less hassle and reduce time taken for MVP and maintenance in the future.
 
 **Important Note**
+- XViewFlutter is still in alpha and not yet published on pub.dev.
 - By adding XView to your application, it is important to note that XView only support for HTML5 and at least flutter version >3 for smooth operation.
+
+## Contributing
+I am highly welcome for contributions towards this project.
+```bash
+git clone https://github.com/fiekzz/xview.git
+```
 
 ## Getting started
 
@@ -207,6 +214,8 @@ controller.scrollToBottom();
 - XViewWrapper (webview npm library)
 - Static webview page (server and local)
 - Dynamic webview page
+- Caching management
+- LocalStorage management
 
 ## License
 The MIT License (MIT)
