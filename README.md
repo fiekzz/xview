@@ -23,6 +23,7 @@ Not only that, those that has experience in web development can work together wi
 ## Getting started
 
 <h6>Adding direct into pubspec.yml</h6>
+
 To get started with the XViewFlutter, we need to add package dependency into the `pubspec.yml` file.
 
 ```dart
