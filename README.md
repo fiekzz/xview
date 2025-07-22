@@ -12,7 +12,7 @@ and the Flutter guide for
 -->
 
 ## XViewFlutter
----
+
 XViewFlutter is a custom webview for the flutter developers to have dynamic webview page which uses the core of `flutter_webview` package from flutter. The mission for this project is to have the advantage of webview and implement within the flutter package. This includes the custom page handling, routes, dynamic design, and fast delivery.
 
 Not only that, those that has experience in web development can work together with existing flutter developers creating wonderful and feature rich applications. The vision for this project is to create an environment that will be less hassle and reduce time taken for MVP and maintenance in the future.
@@ -21,7 +21,7 @@ Not only that, those that has experience in web development can work together wi
 - By adding XView to your application, it is important to note that XView only support for HTML5 and at least flutter version >3 for smooth operation.
 
 ## Getting started
----
+
 <h6>Adding direct into pubspec.yml</h6>
 To get started with the XViewFlutter, we need to add package dependency into the `pubspec.yml` file.
 
@@ -95,7 +95,7 @@ void initializeController() {
 ```
 
 ## Core Features
----
+
 
 ### XViewAPI
 XViewAPI is a bridge for the javascript and typescript to call and invoke flutter code execution. The XViewAPI will call flutter native code using XViewAPI and flutter side can continue the native code execution. This include the execution for biometric (faceid and fingerprint), file management, and more that will be easier to setup and handle in native side.
