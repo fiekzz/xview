@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:xview_flutter/xview.dart';
+import 'package:xview_flutter/xview_flutter.dart';
 
 class XViewWidget extends StatefulWidget {
   const XViewWidget({

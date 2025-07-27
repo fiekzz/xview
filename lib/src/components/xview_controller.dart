@@ -2,7 +2,7 @@ import 'package:crypt/crypt.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:xview_flutter/src/components/xview_page_control_enum.dart';
-import 'package:xview_flutter/xview.dart';
+import 'package:xview_flutter/xview_flutter.dart';
 
 class XViewController extends WebViewController {
   // Custom Callbacks
