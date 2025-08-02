@@ -185,7 +185,7 @@ class XViewController extends WebViewController {
   }
 
   // Execute custom script from the added resources
-  Future<dynamic> executeCustomScript(String scriptName) async {
+  Future<Object?> executeCustomScript(String scriptName) async {
     try {
       final script = _xviewscriptmap[scriptName];
       if (script == null) {
@@ -195,7 +195,7 @@ class XViewController extends WebViewController {
       return result;
     } catch (e) {
       _lastError = e.toString();
-      return e;
+      return null;
     }
   }
 
