@@ -15,6 +15,7 @@ class XViewWidget extends StatefulWidget {
     this.backgroundColor,
     required this.showLoadingIndicator,
     this.loadingWidget,
+    this.widgetKey = const Key('xview_widget'),
   });
 
   final String? initialUrl;
@@ -27,6 +28,7 @@ class XViewWidget extends StatefulWidget {
   final Color? backgroundColor;
   final bool showLoadingIndicator;
   final Widget? loadingWidget;
+  final Key widgetKey;
 
   @override
   State<XViewWidget> createState() => _XViewWidgetState();
@@ -64,7 +66,10 @@ class _XViewWidgetState extends State<XViewWidget> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        WebViewWidget(controller: _controller),
+        WebViewWidget(
+          controller: _controller,
+          key: widget.widgetKey,
+        ),
 
         // Loading indicator
         if (widget.showLoadingIndicator)

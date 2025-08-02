@@ -1,6 +1,6 @@
 name: xview_flutter
 description: "XViewFlutter is a customizable WebView solution built on top of the flutter_webview core, designed for seamless integration of dynamic web content within Flutter apps. It supports custom page handling, route management, and dynamic UI design — making it ideal for fast MVP development and long-term maintenance. Perfect for teams combining Flutter and web development expertise to build feature-rich, hybrid experiences effortlessly."
-version: 0.0.2
+version: 0.0.3
 homepage: 'https://fiekzz.com' # To be updated later
 
 environment:
