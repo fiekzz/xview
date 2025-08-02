@@ -147,6 +147,10 @@ class XViewController extends WebViewController {
   // add xview api
   // upon call from the website, the js script channel will trigger automatically
   void addXViewAPI(String apiName, Function(JavaScriptMessage) completion) {
+    if (_xviewapiList.any((api) => api.apiName == apiName)) {
+      removeXViewAPI(apiName);
+    }
+
     _xviewapiList.add(XViewAPI(apiName: apiName, completion: completion));
     addJavaScriptChannel(apiName, onMessageReceived: completion);
   }
