@@ -204,7 +204,7 @@ class XViewController extends WebViewController {
       return await runJavaScriptReturningResult(rawScript);
     } catch (e) {
       _lastError = e.toString();
-      return e;
+      return null;
     }
   }
 
