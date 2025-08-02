@@ -1,4 +1,5 @@
 import 'package:crypt/crypt.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:xview_flutter/src/components/xview_page_control_enum.dart';
@@ -63,6 +64,12 @@ class XViewController extends WebViewController {
 
     // Enable JavaScript by default
     setJavaScriptMode(JavaScriptMode.unrestricted);
+
+    if (kDebugMode) {
+      setOnConsoleMessage((message) {
+        debugPrint('[XView Console]: $message');
+      });
+    }
   }
 
   // Custom Getters
