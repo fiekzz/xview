@@ -68,11 +68,7 @@ class XViewController extends WebViewController {
     setJavaScriptMode(JavaScriptMode.unrestricted);
 
     setOnConsoleMessage((message) {
-      debugPrint('[XView Console]: $message');
-    });
-
-    addJavaScriptChannel('xview_console', onMessageReceived: (message) {
-      debugPrint('[XView Console]: $message');
+      print('[XView Console]: $message');
     });
   }
 
