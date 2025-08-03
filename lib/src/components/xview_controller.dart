@@ -1,3 +1,5 @@
+import 'dart:nativewrappers/_internal/vm/lib/internal_patch.dart';
+
 import 'package:crypt/crypt.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -65,11 +67,13 @@ class XViewController extends WebViewController {
     // Enable JavaScript by default
     setJavaScriptMode(JavaScriptMode.unrestricted);
 
-    if (kDebugMode) {
-      setOnConsoleMessage((message) {
-        debugPrint('[XView Console]: $message');
-      });
-    }
+    setOnConsoleMessage((message) {
+      debugPrint('[XView Console]: $message');
+    });
+
+    addJavaScriptChannel('xview_console', onMessageReceived: (message) {
+      debugPrint('[XView Console]: $message');
+    });
   }
 
   // Custom Getters
