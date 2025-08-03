@@ -68,7 +68,7 @@ class XViewController extends WebViewController {
     setJavaScriptMode(JavaScriptMode.unrestricted);
 
     setOnConsoleMessage((message) {
-      print('[XView Console]: $message');
+      debugPrint('[XView Console]: $message');
     });
   }
 
