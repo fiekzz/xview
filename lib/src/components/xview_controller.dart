@@ -1,5 +1,3 @@
-import 'dart:nativewrappers/_internal/vm/lib/internal_patch.dart';
-
 import 'package:crypt/crypt.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +66,7 @@ class XViewController extends WebViewController {
     setJavaScriptMode(JavaScriptMode.unrestricted);
 
     setOnConsoleMessage((message) {
-      debugPrint('[XView Console]: $message');
+      print('[XView Console]: $message');
     });
   }
 
