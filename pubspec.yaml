@@ -13,6 +13,7 @@ dependencies:
 
   webview_flutter: ^4.13.0
   crypt: ^4.3.1
+  webview_flutter_wkwebview: ^3.22.1
 
 dev_dependencies:
   flutter_test:
